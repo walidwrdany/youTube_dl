@@ -52,15 +52,3 @@ reg add "HKEY_CLASSES_ROOT\Directory\background\shell\youtube" /V "Icon" /D "C:\
 reg add "HKEY_CLASSES_ROOT\Directory\background\shell\youtube\command" /D "\"%~dp0\y.bat\" \"%%v\"" /F
 
 REM ===============================================================================
-
-
-echo.
-echo.
-pause
-exit
-
-
-
-
-
-
