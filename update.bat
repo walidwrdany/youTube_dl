@@ -32,4 +32,4 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 
 
-choco upgrade youtube-dl yt-dlp ffmpeg atomicparsley aria2 wget openssl -y
+choco upgrade microsoft-windows-terminal youtube-dl yt-dlp ffmpeg atomicparsley aria2 wget openssl -y

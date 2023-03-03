@@ -101,7 +101,7 @@ REM ( ͡° ͜ʖ ͡°)
 	set download_folder_audio=%baseOut%\Audio\
 	set download_folder_videos=%baseOut%\Video\
 	set playlist=%%(channel)s\%%(playlist)s
-	set output=%%(playlist_index^|)s%%(playlist_index^& - ^|)s%%(title)s %%(id)s.%%(ext)s
+	set output=%%(playlist_index^|)03d%%(playlist_index^& - ^|)s%%(title)s.%%(ext)s
 
 	(
 
@@ -114,8 +114,8 @@ REM ( ͡° ͜ʖ ͡°)
 		echo.--no-overwrites
 		echo.--yes-playlist
 		echo.--download-archive "%archive_txt%"
-		echo.--no-embed-info-json
-		echo.
+		REM echo.--no-embed-info-json
+		REM echo.--proxy socks5://127.0.0.1:9150/
 		echo.
 
 
@@ -143,8 +143,8 @@ REM ( ͡° ͜ʖ ͡°)
 			echo.--embed-metadata
 			echo.--merge-output-format mp4
 			echo.--xattrs
-			echo.--embed-subs
-			echo.--write-description
+			REM echo.--embed-subs
+			REM echo.--write-description
 
 			if "%isPlayList%"=="Yes" (
 				echo.--output "%download_folder_videos%\%playlist%\%output%"
